@@ -1,4 +1,3 @@
 # bootstrap-template
-EN: Bootstrap template for class @ Digital House
+Bootstrap template developed during Web Full Stack Developer class.
 
-PT: Template de Bootstrap para a turma Blend 04/19
