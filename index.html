@@ -68,8 +68,15 @@
     <!-- <link rel="prerender" href="assets/css/style.min.css" as="style"> Pré-renderizando o estilo -->
     <!-- <link async defer rel="stylesheet" type="text/css" href="assets/css/style.min.css"> -->
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <header>
+    <!-- Tag nav definindo um menu de navegação.
+		Classe navbar aplica o estilo de uma barra de navegação do Bootstrap.
+		Fixed-top define que o menu será fixo no topo.
+		Navbar-expand define que o 'menu hamburguer' ou mobile aparece até o break-point 'md'. Acima (break-points 'lg' e 'xl') disso, o menu se expande
+		navbar-dark e bg-dark aplicam estilos de cores na nossa nav. -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <a class="navbar-brand" href="#">
         <img src="assets/img/logo.png" alt="Logo do meu projeto" height="30" width="30">
         <span>Bootstrap</span>
@@ -94,54 +101,57 @@
           </li>         
         </ul>
       </div>
-  </nav>
-  <div class="bd-example">
-    <div id="carouselExampleTopo" class="carousel slide row" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleTopo" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleTopo" data-slide-to="1"></li>
-          <li data-target="#carouselExampleTopo" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <section class="row topo" id="topo1">
-              <article class="col-12 d-flex flex-column justify-content-center">
-                <h1 class="com-sombra">Minha Padoca</h1>
-                <p class="com-sombra">A melhor padoca do bairro.</p>
-                <a href="#" title="Ver mais" target="_self" rel="next" class="btn btn-dark mt-3">Veja Mais</a>
-              </article>
-            </section>
-          </div>
-          <div class="carousel-item">
-              <section class="row topo" id="topo2">
+    </nav>
+  </header>
+  <!-- Tag main utilizando classe container-fluid, para definir que nosso container (via bootstrap) será de ponta à ponta -->
+	<main class="container-fluid">
+    <div class="bd-example">
+      <div id="carouselExampleTopo" class="carousel slide row" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleTopo" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleTopo" data-slide-to="1"></li>
+            <li data-target="#carouselExampleTopo" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <section class="row topo" id="topo1">
                 <article class="col-12 d-flex flex-column justify-content-center">
-                  <h1 class="com-sombra">Nossa Padoca</h1>
-                  <p class="com-sombra">A melhor padoca da cidade.</p>
+                  <h1 class="com-sombra">Minha Padoca</h1>
+                  <p class="com-sombra">A melhor padoca do bairro.</p>
                   <a href="#" title="Ver mais" target="_self" rel="next" class="btn btn-dark mt-3">Veja Mais</a>
                 </article>
               </section>
             </div>
             <div class="carousel-item">
-                <section class="row topo" id="topo3">
+                <section class="row topo" id="topo2">
                   <article class="col-12 d-flex flex-column justify-content-center">
-                    <h1 class="com-sombra">Sua Padoca</h1>
-                    <p class="com-sombra">A melhor padoca do universo.</p>
+                    <h1 class="com-sombra">Nossa Padoca</h1>
+                    <p class="com-sombra">A melhor padoca da cidade.</p>
                     <a href="#" title="Ver mais" target="_self" rel="next" class="btn btn-dark mt-3">Veja Mais</a>
                   </article>
                 </section>
               </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleTopo" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleTopo" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+              <div class="carousel-item">
+                  <section class="row topo" id="topo3">
+                    <article class="col-12 d-flex flex-column justify-content-center">
+                      <h1 class="com-sombra">Sua Padoca</h1>
+                      <p class="com-sombra">A melhor padoca do universo.</p>
+                      <a href="#" title="Ver mais" target="_self" rel="next" class="btn btn-dark mt-3">Veja Mais</a>
+                    </article>
+                  </section>
+                </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleTopo" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleTopo" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+      </div>
     </div>
-  </div>
-
+  </main>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
