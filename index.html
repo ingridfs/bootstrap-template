@@ -99,58 +99,72 @@
   </nav>
   </header>
   <!-- Tag main utilizando classe container-fluid, para definir que nosso container (via bootstrap) será de ponta à ponta -->
-  <main class="container-fluid">
-    <div class="bd-example">
-      <div id="carouselTopo" class="carousel slide row" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselTopo" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselTopo" data-slide-to="1"></li>
-            <li data-target="#carouselTopo" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <!-- Tag section com classe row, definindo que será um sub-container (ou 'wrapper') onde nosso conteúdo será organizado em colunas -->
-              <section class="row topo" id="topo1">
-                <!-- Tag article com classe col-12 (de ponta à ponta) e com classes definindo do flex-box:
-                < article { display: flex; justify-content: center; align-items: center; } > -->
-                <article class="col-12 d-flex flex-column justify-content-center">
-                  <h1 class="com-sombra">Minha Padoca</h1>
-                  <p class="com-sombra">A melhor padoca do bairro.</p>
-                  <!-- Aplicando a classe btn, que define - visualmente - os botões - e btn-dark (que define a cor do botão) -->
-                  <a href="#" title="Ver mais" target="_self" rel="next" class="btn btn-dark mt-3">Veja Mais</a>
-                </article>
-              </section>
-            </div>
-            <div class="carousel-item">
-                <section class="row topo" id="topo2">
-                  <article class="col-12 d-flex flex-column justify-content-center">
-                    <h1 class="com-sombra">Nossa Padoca</h1>
-                    <p class="com-sombra">A melhor padoca da cidade.</p>
-                    <a href="#" title="Ver mais" target="_self" rel="next" class="btn btn-dark mt-3">Veja Mais</a>
-                  </article>
-                </section>
-              </div>
-              <div class="carousel-item">
-                  <section class="row topo" id="topo3">
-                    <article class="col-12 d-flex flex-column justify-content-center">
-                      <h1 class="com-sombra">Sua Padoca</h1>
-                      <p class="com-sombra">A melhor padoca do universo.</p>
-                      <a href="#" title="Ver mais" target="_self" rel="next" class="btn btn-dark mt-3">Veja Mais</a>
-                    </article>
-                  </section>
-                </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselTopo" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselTopo" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-      </div>
-    </div>
+	<main class="container-fluid">
+		<div id="carouselTopo" class="carousel slide row" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselTopo" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselTopo" data-slide-to="1"></li>
+				<li data-target="#carouselTopo" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<!-- Tag section com classe row, definindo que será um sub-container (ou 'wrapper') onde nosso conteúdo será organizado em colunas -->
+					<section class="row topo" id="topo1">
 
+						<!-- Tag article com classe col-12 (de ponta à ponta) e com classes definindo do flex-box:
+							< article { display: flex; justify-content: center; align-items: center; } >
+						-->
+						<article class="col-12 d-flex flex-column justify-content-center align-items-center">
+							<h1 class="com-sombra">Padaria dos Sonhos</h1>
+							<p class="com-sombra">Por que nosso sonho é um sonho de sonho</p>
+
+							<!-- Aplicando a classe btn, que define - visualmente - os botões - e btn-dark (que define a cor do botão) -->
+							<a href="#produtos" title="Ver Produtos" target="_self" rel="next" class="btn btn-dark mt-3">Ver Mais</a>
+						</article>
+					</section>
+				</div>
+				<div class="carousel-item">
+					<!-- Tag section com classe row, definindo que será um sub-container (ou 'wrapper') onde nosso conteúdo será organizado em colunas -->
+					<section class="row topo" id="topo2">
+
+						<!-- Tag article com classe col-12 (de ponta à ponta) e com classes definindo do flex-box:
+							< article { display: flex; justify-content: center; align-items: center; } >
+						-->
+						<article class="col-12 d-flex flex-column justify-content-center align-items-center">
+							<h1 class="com-sombra">Padaria dos Sonhos</h1>
+							<p class="com-sombra">Por que nosso sonho é um sonho de sonho</p>
+
+							<!-- Aplicando a classe btn, que define - visualmente - os botões - e btn-dark (que define a cor do botão) -->
+							<a href="#produtos" title="Ver Produtos" target="_self" rel="next" class="btn btn-dark mt-3">Ver Mais</a>
+						</article>
+					</section>
+				</div>
+				<div class="carousel-item">
+					<!-- Tag section com classe row, definindo que será um sub-container (ou 'wrapper') onde nosso conteúdo será organizado em colunas -->
+					<section class="row topo" id="topo3">
+
+						<!-- Tag article com classe col-12 (de ponta à ponta) e com classes definindo do flex-box:
+							< article { display: flex; justify-content: center; align-items: center; } >
+						-->
+						<article class="col-12 d-flex flex-column justify-content-center align-items-center">
+							<h1 class="com-sombra">Café de Cocô de Morcego</h1>
+							<p class="com-sombra">Tem coragem?</p>
+
+							<!-- Aplicando a classe btn, que define - visualmente - os botões - e btn-dark (que define a cor do botão) -->
+							<a href="#produtos" title="Ver Produtos" target="_self" rel="next" class="btn btn-dark mt-3">Ver Mais</a>
+						</article>
+					</section>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselTopo" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselTopo" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
     <section class="row" id="sobre">
       <article class="col-12 my-5 d-flex flex-column justify-content-center align-items-center">
         <h2>Nossa missão é te engordar</h2>
