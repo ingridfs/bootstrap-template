@@ -157,8 +157,71 @@
         <p>As melhores guloseimas estão aqui</p>
         <a href="#produtos" title="Ver Produtos" target="_self" rel="next" class="btn btn-dark mt-3">Mostre-me!</a>
       </article>
-      
     </section>
+
+    <section class="row pt-5" id="especialidades">
+			<h1 class="col-12 mb-3 com-sombra">Especialidades</h1>
+			<article class="col-12 col-sm-6 col-lg-3 mt-3">
+				<!-- As classes .fas - acompanhadas das classes .fa-coffee, .fa-bread-slice, etc. - trazem ícones como fontes, através do CDN do Font Awesome (daí a classe .fa). Obs.: hoje se utiliza mais as classes 'raíz' .fas (s de solids) e .fab (b de brands), por exemplo, <i class="fab fa-git-hub"></i> -->
+				<i class="fas fa-bread-slice my-2 com-sombra"></i>
+				<p class="px-2 px-sm-3 px-md-5 px-lg-4 px-xl-1 com-sombra">Pães Artesanais</p>
+				<!-- Componente 'modal' do Bootstrap - abre uma caixa do tipo 'pop up', mas mais agradável -->
+				<!-- O atributo data-target seleciona o modal que será aberto de acordo com o clique -->
+				<button type="button" class="btn btn-dark mb-5" data-toggle="modal" data-target="#paesModal">
+				  Ver opções
+        </button>
+        
+        				<!-- Modal Pães - início -->
+					<div class="modal fade" id="paesModal" tabindex="-1" role="dialog" aria-labelledby="paesModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="paesModalLabel">Nossos Pães</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									Os pedidos podem ser realizados a <strong>qualquer dia e a qualquer hora</strong>. Basta entrar em contato com a gente!
+									<table class="table mt-4">
+									<thead>
+										<tr>
+											<th scope="col">#</th>
+											<th scope="col">Tipo</th>
+											<th scope="col">Preço</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">#01</th>
+											<td>Integral</td>
+											<td>R$ 3,50 / kg</td>
+										</tr>
+										<tr>
+											<th scope="row">#02</th>
+											<td>Artesanal</td>
+											<td>R$ 3,90 / kg</td>
+										</tr>
+										<tr>
+											<th scope="row">#03</th>
+											<td>Vegano</td>
+											<td>R$ 5,50 / kg</td>
+										</tr>
+									</tbody>
+								</table>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-dark" data-dismiss="modal">OK</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				<!-- Modal Pães - final -->
+			</article>
+
+
+
+
   </main>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
